@@ -1,0 +1,11 @@
+{
+	"userdata":[
+		{
+			"status":"user",
+			"password":"SuperNormalUserOui"
+		},{
+			"status":"admin",
+			"password":"AdminPassword-NotaFlag"
+		}
+	]
+}

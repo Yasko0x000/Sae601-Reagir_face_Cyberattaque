@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Déclaration du type de document et de la langue du document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liaison vers une feuille de style externe pour le stylage -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Titre de la page -->
+    <title>Site de Connexion</title>
+</head>
+<body>
+    <!-- Titre principal de la page -->
+    <h1>Site de Connexion</h1>
+
+    <!-- Description pour inciter l'utilisateur à se connecter -->
+    <p>Veuillez vous connecter afin d'avoir vos droits Administrateur.</p>
+
+    <!-- Formulaire de connexion avec action "/login" et méthode "post" -->
+    <form action="/login" method="post">
+        <!-- Champ pour le nom d'utilisateur -->
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+
+        <!-- Champ pour les permissions (commenté dans l'exemple) -->
+        <!-- <label for="cookieValue">Permissions :</label>
+        <input type="text" id="cookieValue" name="cookieValue" required> -->
+
+        <!-- Bouton de soumission du formulaire -->
+        <button type="submit">Connexion</button>
+    </form>
+</body>
+</html>

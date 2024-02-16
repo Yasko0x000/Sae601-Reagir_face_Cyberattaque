@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  #Configurration du service WEB
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80" #On envoie des données au conteneur sur le port 80 en utilisant le port 8080
+    volumes:
+    #On monte les fichier index.php et style.css dans le conteneur
+      - ./index.php:/var/www/html/index.php
+      - ./style.css:/var/www/html/style.css
+    depends_on:
+      - db #En effectuant cela, le service db démarre avant le service web
+  db:
+    image: mysql:8.2
+    environment:
+      MYSQL_DATABASE: ctf
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+    #On monte le fichier ctf.sql dans le conteneur de la base de données mysql pour pouvoir l'éxécuter
+      - ./ctf.sql:/docker-entrypoint-initdb.d/ctf.sql

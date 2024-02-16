@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pour les telephones -->
+    <title>Chasse au trésor</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le style CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🔍 Chasse au trésor 🔍</h1>
+        <!-- Formulaire pour rechercher un trésor -->
+        <form action="search.php" method="post"> <!-- Début du formulaire avec action définie sur 'search.php' et méthode POST -->
+            <label for="treasureName" class="label">Entrez le nom du trésor:</label> <!-- Text du champ de saisie -->
+            <!-- Champ de saisie du nom du trésor -->
+            <input type="text" id="treasureName" name="treasureName" class="input" placeholder="Silver, Gold" required> <!-- Champ de saisie avec identifiant, nom, classe, placeholder et attribut 'required' -->
+            <!-- Bouton pour lancer la recherche -->
+            <button type="submit" class="button">Chercher</button> <!-- Bouton de soumission du formulaire avec classe 'button' -->
+        </form> <!-- Fin du formulaire -->
+    </div>
+</body>
+</html>

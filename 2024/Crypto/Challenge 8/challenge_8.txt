@@ -1,0 +1,6 @@
+CHALLENGE 8 :
+
+Juin 1915, vous faîtes toujours partie de l'équipe de télécommunications de l'armée allemande, et vous venez de recevoir un message d'un espion infiltré dans les forces de résistance francaise qui doit contenir l'heure précise à laquelle leur chef va organiser une réunion clandestine dans catacombes de Paris.
+Le chiffrement UBCHI a été rendu inefficace depuis plusieurs mois mais heuresement, quelques ingénieurs sacrément *kluge* ont mis en place le système de chiffrement actuellement utilisé.
+Le message reçu est : JGGXNXJ SPEZWEZ DVGTGGII JZKVIWF GVNOGNT.
+L'équipe d'intervention attend vos informations pour se préparer, à quelle heure vont-ils devoir intervenir ?

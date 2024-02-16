@@ -1,0 +1,39 @@
+/* Reset des styles de base pour assurer une base cohérente entre les navigateurs */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Ajoutez des styles supplémentaires selon vos besoins */

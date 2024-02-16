@@ -1,0 +1,25 @@
+version: '3' # Version de la syntaxe Docker Compose utilisée
+
+services: # Définition des services Docker
+
+  web: # Service pour l'application web
+    build: # Configuration de la construction de l'image Docker
+      context: . # Chemin vers le répertoire de contexte pour la construction de l'image
+      dockerfile: dockerfile # Chemin vers le fichier Dockerfile utilisé pour construire l'image
+    ports: # Configuration des ports exposés
+      - "8080:80" # Mappage du port 8080 de l'hôte vers le port 80 du docker
+    volumes: # Configuration des volumes montés
+      - ./challenge2.php:/var/www/html/challenge2.php # Montage du fichier challenge2.php dans le répertoire /var/www/html du docker
+      - ./index.html:/var/www/html/index.html # Montage du fichier index.html dans le répertoire /var/www/html du docker
+      - ./search.php:/var/www/html/search.php # Montage du fichier search.php dans le répertoire /var/www/html du docker
+      - ./style.css:/var/www/html/style.css
+    depends_on: # Définition des dépendances
+      - db # Ce service dépend du service 'db'
+
+  db: # Service pour la base de données MySQL
+    image: mysql:8.2 # Utilisation de l'image Docker MySQL version 8.2
+    environment: # Configuration des variables d'environnement
+      MYSQL_DATABASE: ctf1 # Nom de la base de données MySQL à créer
+      MYSQL_ROOT_PASSWORD: root # Mot de passe root pour MySQL
+    volumes: # Configuration des volumes montés
+      - ./bdd_yasko_ctf1.sql:/docker-entrypoint-initdb.d/bdd_yasko_ctf1.sql # Montage du fichier bdd_yasko_ctf1.sql dans le répertoire /docker-entrypoint-initdb.d du docker MySQL

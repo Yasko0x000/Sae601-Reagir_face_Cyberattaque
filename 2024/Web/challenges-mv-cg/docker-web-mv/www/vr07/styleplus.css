@@ -1,0 +1,10 @@
+.form-container {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: flex-start; /* Alignement horizontal à gauche */
+}
+
+.input {
+    margin-right: 0px; /* Ajoute un peu d'espace entre les formulaires */
+}
+

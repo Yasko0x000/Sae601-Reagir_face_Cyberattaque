@@ -1,0 +1,1 @@
+As tu déjà entendu parler de la fonction btoa?

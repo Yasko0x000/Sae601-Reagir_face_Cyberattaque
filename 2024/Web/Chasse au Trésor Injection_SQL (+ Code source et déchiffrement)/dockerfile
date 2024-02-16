@@ -1,0 +1,4 @@
+FROM php:apache
+
+# Installation de l'extension MySQLi
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli

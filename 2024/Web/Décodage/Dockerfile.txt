@@ -1,0 +1,8 @@
+# Utiliser une image de base légère, par exemple un serveur HTTP Nginx
+FROM nginx:alpine
+
+# Copier tous les fichiers dans le répertoire web par défaut d'Nginx
+COPY . /usr/share/nginx/html/
+
+# Exposer le port 80 pour permettre l'accès au serveur web
+EXPOSE 80

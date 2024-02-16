@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmarès de Cristiano Ronaldo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+
+        .message {
+            display: none;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .trophies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .trophy {
+            margin: 10px;
+            width: 250px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+        <h1>Cristiano Ronaldo</h1>
+        <p>Cristiano Ronaldo est le meilleur joueur de football de tous les temps. Il a remporté de nombreux trophées et distinctions tout au long de sa carrière.</p>
+    </div>
+    <h2>Palmarès de Cristiano Ronaldo</h2>
+    <div class="trophies">
+        <div class="trophy">
+            <h3>Ligue des Champions</h3>
+            <p>UEFA Champions League</p>
+            <p>2007/2008, 2013/2014, 2015/2016, 2016/2017, 2017/2018</p>
+            <p>PALMARÈS: 5</p>
+        </div>
+        <div class="trophy">
+            <h3>UEFA Nations League</h3>
+            <p>2018/2019</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+        <div class="trophy">
+            <h3>Euro</h3>
+            <p>2016</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+        <div class="trophy">
+            <h3>Premier League</h3>
+            <p>2006/2007, 2007/2008, 2008/2009</p>
+            <p>PALMARÈS: 3</p>
+        </div>
+        <div class="trophy">
+            <h3>Liga</h3>
+            <p>2011/2012, 2016/2017</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>Supercoupe d'Italie</h3>
+            <p>2018/2019, 2020/2021</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>Serie A</h3>
+            <p>2018/2019, 2019/2020</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>Coupe du Roi</h3>
+            <p>2010/2011, 2013/2014</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>Coppa Italia</h3>
+            <p>2020/2021</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+        <div class="trophy">
+            <h3>The Emirates FA Cup</h3>
+            <p>2003/2004</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+        <div class="trophy">
+            <h3>Supercoupe d'Espagne</h3>
+            <p>2012/2013, 2017/2018</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>League Cup</h3>
+            <p>2005/2006, 2008/2009</p>
+            <p>PALMARÈS: 2</p>
+        </div>
+        <div class="trophy">
+            <h3>Super Coupe</h3>
+            <p>2002/2003</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+        <div class="trophy">
+            <h3>Community Shield</h3>
+            <p>2003/2004, 2007/2008, 2008/2009</p>
+            <p>PALMARÈS: 3</p>
+        </div>
+        <div class="trophy">
+            <h3>Super Coupe de l'UEFA</h3>
+            <p>2014/2015, 2016/2017, 2017/2018</p>
+            <p>PALMARÈS: 3</p>
+        </div>
+        <div class="trophy">
+            <h3>Coupe du Monde des Clubs</h3>
+            <p>2008, 2014, 2016, 2017</p>
+            <p>PALMARÈS: 4</p>
+        </div>
+        <div class="trophy">
+            <h3>International Champions Cup</h3>
+            <p>2013</p>
+            <p>PALMARÈS: 1</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <button id="activateButton" onclick="showMessage()" disabled>En savoir plus</button>
+    <p id="message" class="message"></p>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "Bien joué!";
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
